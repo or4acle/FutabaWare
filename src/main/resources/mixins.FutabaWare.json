@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "me.FutabaWare.mixin.mixins",
+  "refmap": "mixins.FutabaWare.refmap.json",
+  "mixins": [
+    "MixinBlockLiquid",
+    "MixinEntityPlayer",
+    "MixinEntityPlayerSP",
+    "MixinEntityRenderer",
+    "MixinGuiNewChat",
+    "MixinEntityLivingBase",
+    "MixinGuiPlayerTabOverlay",
+    "MixinGuiScreen",
+    "MixinItemRenderer",
+    "MixinRenderItem",
+    "MixinMinecraft",
+    "MixinModelPlayer",
+    "MixinNetworkManager",
+    "MixinPlayerControllerMP",
+    "MixinRenderEnderCrystal",
+    "MixinRenderLivingBase",
+    "MixinWorld",
+    "accessors.ICPacketUseEntity",
+    "accessors.IEntityLivingBase",
+    "accessors.IEntityPlayerSP",
+    "accessors.IRenderManager",
+    "accessors.IEntityRenderer"
+  ]
+}

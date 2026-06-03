@@ -1,0 +1,17 @@
+[
+  {
+    "modid": "futabaware",
+    "name": "FutabaWare",
+    "description": "funny",
+    "version": "1.2",
+    "mcversion": "1.12.2",
+    "logoFile": "",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "or4acle"
+    ],
+    "screenshots": [],
+    "dependencies": []
+  }
+]
