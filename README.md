@@ -7,7 +7,10 @@
 ![epic](https://img.shields.io/badge/built%20with%20hopes%20and%20dreams-FF4500)
 
 FutabaWare is a heavily skidded client made by or4acle (me) just for shits and giggles. Please, do not use this seriously (cuz its really bad).
-I do plan to update this, just for fun. Also, some modules are broken, and do NOT work in today's servers.
+
+I do plan to update and rewrite this, just for fun.
+
+**FYI:** Also, some modules are broken, and do NOT work in today's servers.
 
 
 
