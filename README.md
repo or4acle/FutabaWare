@@ -1,6 +1,8 @@
 
 # FutabaWare: A lightweight utility mod for 1.12.2
-
+<div align="center">
+    <img src="https://raw.githubusercontent.com/or4acle/FutabaWare/master/readmestuff/banner.png" width="750">
+</div>
 ![epic](https://img.shields.io/badge/built%20with%20hopes%20and%20dreams-FF4500)
 
 FutabaWare is a heavily skidded client made by or4acle (me) just for shits and giggles. Please, do not use this seriously (cuz its really bad).
