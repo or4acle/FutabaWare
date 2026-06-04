@@ -57,6 +57,5 @@ Linux/Mac:
 - oHare - made Phobos
 - Megyn - made Phobos
 
-
-## ![Logo](https://i.imgur.com/RLE7URU.png)
-**do it for her.**
+##
+**do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** **do it for her.** 
