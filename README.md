@@ -1,5 +1,5 @@
 
-# FutabaWare: A lightweight utility mod for 1.12.2
+# FutabaWare: The most **EPIC** utility mod for 1.12.2
 <div align="center">
     <img src="https://raw.githubusercontent.com/or4acle/FutabaWare/master/readmestuff/banner.png" width="750">
 </div>
