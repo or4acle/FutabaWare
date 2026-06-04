@@ -3,7 +3,7 @@
 
 ![epic](https://img.shields.io/badge/built%20with%20hopes%20and%20dreams-FF4500)
 
-FutabaWare is a really shit skidded client made by or4acle just for shits and giggles. Please, do not use this seriously (cuz its really bad).
+FutabaWare is a really shit skidded client made by or4acle (me) just for shits and giggles. Please, do not use this seriously (cuz its really bad).
 
 
 
@@ -43,7 +43,7 @@ Linux/Mac:
 
 ## Authors
 
-- [@or4acle](https://www.github.com/octokatherine) - made FutabaWare
+- [@or4acle](https://www.github.com/octokatherine) - "made" FutabaWare
 - [@Femey](https://www.github.com/Femey) - made Femhack
 - [@3arthqu4ke](https://www.github.com/3arthqu4ke) - made Phobos
 - [@Crystallinqq](https://github.com/Crystallinqq) - made Phobos
@@ -52,3 +52,4 @@ Linux/Mac:
 
 
 ## ![Logo](https://i.imgur.com/RLE7URU.png)
+**do it for her.**
