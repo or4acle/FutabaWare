@@ -5,7 +5,9 @@ import me.FutabaWare.FutabaWare;
 import me.FutabaWare.event.events.ClientEvent;
 import me.FutabaWare.event.events.Render2DEvent;
 import me.FutabaWare.features.Feature;
+import me.FutabaWare.features.command.Command;
 import me.FutabaWare.features.modules.Module;
+import me.FutabaWare.manager.UpdateChecker;
 import me.FutabaWare.util.*;
 import me.FutabaWare.util.Timer;
 import me.FutabaWare.features.setting.Setting;
@@ -410,6 +412,14 @@ public class HUD extends Module {
         if (event.getStage() == 2 &&
                 equals(event.getSetting().getFeature()))
             FutabaWare.commandManager.setClientMessage(getCommandMessage());
+    }
+
+    @Override
+    public void onLogin() {
+        if (UpdateChecker.pendingMessage != null) {
+            Command.sendMessage(UpdateChecker.pendingMessage);
+            UpdateChecker.pendingMessage = null;
+        }
     }
 
     public String getCommandMessage() {

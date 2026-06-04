@@ -2,6 +2,7 @@ package me.FutabaWare.features.modules;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 import me.FutabaWare.FutabaWare;
+import me.FutabaWare.manager.UpdateChecker;
 import me.FutabaWare.event.events.ClientEvent;
 import me.FutabaWare.event.events.Render2DEvent;
 import me.FutabaWare.event.events.Render3DEvent;
@@ -39,6 +40,7 @@ public class Module
         this.hidden = hidden;
         this.alwaysListening = alwaysListening;
     }
+
 
     public boolean isSliding() {
         return this.sliding;

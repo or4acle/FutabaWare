@@ -2,7 +2,6 @@ package me.FutabaWare.features.gui;
 
 import me.FutabaWare.FutabaWare;
 import me.FutabaWare.util.RenderUtil;
-import me.FutabaWare.manager.UpdateManager; // Import do sistema de Update
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.*;
@@ -15,8 +14,6 @@ import java.awt.Color;
 import java.util.Random;
 
 public class GuiMainMenuFutaba extends GuiScreen {
-
-    private boolean isUpdating = false;
 
     // ─── Constantes ───────────────────────────────────────
     private static final int   COLOR_GREEN  = 0x39FF14;
@@ -88,18 +85,11 @@ public class GuiMainMenuFutaba extends GuiScreen {
         this.buttonList.add(new TextButton(2, x, y + 66, "Options"));
         this.buttonList.add(new TextButton(3, x, y + 88, "Exit"));
         this.buttonList.add(new TextButton(4, x, y + 110, "Reload Client"));
-
-        // Se tiver update, cria um botão destacado no final com o ID 5
-        if (UpdateManager.needsUpdate) {
-            this.buttonList.add(new TextButton(5, this.x, this.y + 132, "NEW UPDATE DROPPED: FUTABAWARE (v" + UpdateManager.latestVersion + ")"));
-        }
     }
 
     // ─── Ações ────────────────────────────────────────────
     @Override
     protected void actionPerformed(GuiButton button) {
-        if (isUpdating) return; // Trava os botões se estiver baixando update
-
         switch (button.id) {
             case 0: mc.displayGuiScreen(new GuiWorldSelection(this)); break;
             case 1: mc.displayGuiScreen(new GuiMultiplayer(this));    break;
@@ -108,10 +98,6 @@ public class GuiMainMenuFutaba extends GuiScreen {
             case 4:
                 FutabaWare.reload();
                 mc.displayGuiScreen(new GuiMainMenuFutaba());
-                break;
-            case 5: // Ação do botão de Update
-                isUpdating = true;
-                UpdateManager.downloadAndInstallUpdate();
                 break;
         }
     }
@@ -179,17 +165,6 @@ public class GuiMainMenuFutaba extends GuiScreen {
         );
 
         super.drawScreen(mouseX, mouseY, partialTicks);
-
-        // Aviso visual enquanto baixa a atualização
-        if (isUpdating) {
-            String updateText = "Downloading update. This instance will shutdown soon.";
-            FutabaWare.textManager.drawStringWithShadow(
-                    updateText,
-                    this.width / 2f - FutabaWare.textManager.getStringWidth(updateText) / 2f,
-                    this.y + 155,
-                    Color.RED.getRGB()
-            );
-        }
     }
 
     // ─── Helper de imagem ────────────────────────────────
@@ -226,8 +201,7 @@ public class GuiMainMenuFutaba extends GuiScreen {
                     && mouseX <  this.x + this.width
                     && mouseY <  this.y + this.height;
 
-            // Fica vermelho se for o botão de Update
-            int color = this.hovered ? 0xFFFFFF : (this.id == 5 ? Color.RED.getRGB() : 0x00FF00);
+            int color = this.hovered ? 0xFFFFFF : 0x00FF00;
 
             FutabaWare.textManager.drawStringWithShadow(
                     this.displayString,
@@ -243,7 +217,7 @@ public class GuiMainMenuFutaba extends GuiScreen {
                         this.x     + halfW + 1f,
                         this.y + 2 + FutabaWare.textManager.getFontHeight(),
                         1f,
-                        this.id == 5 ? Color.RED.getRGB() : 0x39FF14
+                        0x39FF14
                 );
             }
         }

@@ -10,7 +10,7 @@ import me.FutabaWare.features.setting.Setting;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Feature
+public abstract class Feature
         implements Util {
     public List<Setting> settings = new ArrayList<Setting>();
     public TextManager renderer = FutabaWare.textManager;
@@ -94,5 +94,7 @@ public class Feature
     public void clearSettings() {
         this.settings = new ArrayList<Setting>();
     }
+
+    public abstract void onLogin();
 }
 

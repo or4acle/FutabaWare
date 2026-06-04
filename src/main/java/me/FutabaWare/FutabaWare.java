@@ -2,12 +2,6 @@ package me.FutabaWare;
 
 import me.FutabaWare.manager.*;
 import me.FutabaWare.util.DiscordPresence;
-import me.FutabaWare.manager.UpdateManager; // Import do sistema de Update
-
-import club.minnced.discord.rpc.*;
-import club.minnced.discord.rpc.DiscordEventHandlers;
-import club.minnced.discord.rpc.DiscordRPC;
-import club.minnced.discord.rpc.DiscordRichPresence;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -21,7 +15,7 @@ import static me.FutabaWare.FutabaWare.*;
 public class FutabaWare {
     public static final String MODID = "futabaware";
     public static final String MODNAME = "FutabaWare";
-    public static final String MODVER = "1.2";
+    public static final String MODVER = "1.3";
     public static final Logger LOGGER = LogManager.getLogger("FutabaWare");
     public static CommandManager commandManager;
     public static FriendManager friendManager;
@@ -145,8 +139,7 @@ public class FutabaWare {
     public void init(FMLInitializationEvent event) {
         Display.setTitle("FutabaWare v" + MODVER);
         FutabaWare.load();
-
-        // Pede para o client verificar no GitHub se existe uma atualização de forma silenciosa
-        UpdateManager.checkForUpdates();
+        UpdateChecker.check(); // adiciona aqui
     }
 }
+
